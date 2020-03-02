@@ -1,0 +1,426 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Exercicio Pratico 1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Números e Operações Aritméticas"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "1 Faça um Programa que peça o raio de um círculo, calcule e mostre sua área."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Digite a area do circulo em metros: 3.5\n",
+      "A area do circulo é 38.465 m²\n"
+     ]
+    }
+   ],
+   "source": [
+    "pi = 3.14\n",
+    "r = float (input (\"Digite a area do circulo em metros: \"))\n",
+    "a = pi * (r*r)\n",
+    "print (\"A area do circulo é\",a,\"m²\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "2 Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro\n",
+    "desta área para o usuário."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Digite a altura da quadrado em metros: 5\n",
+      "Digite a largura do quadrado em metros: 4\n",
+      "O dobro da area é 40.0 m²\n"
+     ]
+    }
+   ],
+   "source": [
+    "altura = float (input (\"Digite a altura da quadrado em metros: \"))\n",
+    "largura = float (input (\"Digite a largura do quadrado em metros: \"))\n",
+    "a = altura * largura\n",
+    "print (\"O dobro da area é\",a*2,\"m²\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "3 Faça um Programa que pergunte quanto você ganha por hora e o número de horas\n",
+    "trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Quanto você ganha por hora: 28\n",
+      " Qual o número de horas trabalhadas no mês: 48\n",
+      "O seu salario por mês é 1344\n"
+     ]
+    }
+   ],
+   "source": [
+    "valor = int (input (\"Quanto você ganha por hora: \"))\n",
+    "hora = int (input (\" Qual o número de horas trabalhadas no mês: \"))\n",
+    "salario_mes = valor * hora\n",
+    "print (\"O seu salario por mês é R$\", salario_mes)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "4 Faça um Programa que peça a temperatura em graus Farenheit, transforme e\n",
+    "mostre a temperatura em graus Celsius. C = (5 * (F-32) / 9)."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Qual a temperatura em graus Farenheit: 28\n",
+      "O valor convertido de Farenheit para celsius é:  -2.2222222222222223\n"
+     ]
+    }
+   ],
+   "source": [
+    "farenheit = float (input (\"Qual a temperatura em graus Farenheit: \"))\n",
+    "celsius = (5 * (farenheit-32)/9)\n",
+    "print (\"O valor convertido de Farenheit para celsius é: \",celsius)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "5 Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre\n",
+    "em graus Farenheit."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Qual a temperatura em graus Celsius: 40\n",
+      "O valor convertido de celsius para Farenheit é:  104.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "celsius = float (input(\"Qual a temperatura em graus Celsius: \"))\n",
+    "farenheit = celsius * (9/5) + 32\n",
+    "print (\"O valor convertido de celsius para Farenheit é: \",farenheit)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "6 Faça um Programa que peça 2 números inteiros e um número real. Calcule e\n",
+    "mostre:\n",
+    "- o produto do dobro do primeiro com metade do segundo .\n",
+    "- a soma do triplo do primeiro com o terceiro.\n",
+    "- o terceiro elevado ao cubo."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Digite um numero inteiro: 4\n",
+      "Digite outro numero inteiro: 7\n",
+      "Digite um numero real: 2.5\n",
+      "o produto do dobro do primeiro com metade do segundo:  28.0\n",
+      "a soma do triplo do primeiro com o terceiro:  19.5\n",
+      "o terceiro elevado ao cubo:  15.625\n"
+     ]
+    }
+   ],
+   "source": [
+    "primeiro = int (input (\"Digite um numero inteiro: \"))\n",
+    "segundo = int (input (\"Digite outro numero inteiro: \"))\n",
+    "terceiro = float (input (\"Digite um numero real: \"))\n",
+    "produto = (primeiro * 2) * (segundo / 2)\n",
+    "print (\"o produto do dobro do primeiro com metade do segundo: \",produto)\n",
+    "soma = (primeiro * 3) + (terceiro * 3)\n",
+    "print (\"a soma do triplo do primeiro com o terceiro: \",soma)\n",
+    "cubo = terceiro ** 3\n",
+    "print (\"o terceiro elevado ao cubo: \",cubo)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "7 João Papo-de-Pescador, homem de bem, comprou um microcomputador para\n",
+    "controlar o rendimento diário de seu trabalho. Toda vez que ele traz um peso de\n",
+    "peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo\n",
+    "(50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. João precisa que\n",
+    "você faça um programa que leia a variável peso (peso de peixes) e verifique se há\n",
+    "excesso. Se houver, gravar na variável excesso e na variável multa o valor da multa\n",
+    "que João deverá pagar. Caso contrário mostrar tais variáveis com o conteúdo ZERO."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Digite o peso: 70\n",
+      "O valor da multa é:  80.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "peso = float (input(\"Digite o peso: \"))\n",
+    "taxa = 4\n",
+    "multa = 0\n",
+    "excesso = 0\n",
+    "\n",
+    "if peso > 50:\n",
+    "    excesso = peso - 50\n",
+    "    multa = excesso * taxa\n",
+    "    \n",
+    "print(\"O valor da multa é: \",multa)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "8 Faça um Programa que pergunte quanto você ganha por hora e o número de horas\n",
+    "trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês,\n",
+    "sabendo-se que são descontados 11% para o Imposto de Renda, 8% para o INSS e 5%\n",
+    "para o sindicato, faça um programa que nos dê:\n",
+    "- salário bruto.\n",
+    "- quanto pagou ao INSS.\n",
+    "- quanto pagou ao sindicato.\n",
+    "- o salário líquido.\n",
+    "- calcule os descontos e o salário líquido, conforme a tabela abaixo:\n",
+    "+ Salário Bruto : R$\n",
+    "- IR (11%) : R$\n",
+    "- INSS (8%) : R$\n",
+    "- Sindicato ( 5%) : R$\n",
+    "= Salário Liquido : R$\n",
+    "Obs.: Salário Bruto - Descontos = Salário Líquido."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Digite quanto você ganha por hora: 38\n",
+      "Digite quantas horas você trabalha por dia: 50\n",
+      "O seu salario bruto é de R$ 1900.0\n",
+      "O valor descontado sobre o imposto de renda é de R$ 209.0\n",
+      "O valor descontado sobre o INSS é de R$ 152.0\n",
+      "O valor descontado sobre o desconto do sindicato é de R$ 95.0\n",
+      "Salário Liquido é R$ 1444.00\n"
+     ]
+    }
+   ],
+   "source": [
+    "salario = float (input(\"Digite quanto você ganha por hora: \"))\n",
+    "horas = int (input(\"Digite quantas horas você trabalha por dia: \"))\n",
+    "salario_bruto = salario * horas\n",
+    "ir = salario_bruto * 0.11\n",
+    "inss = salario_bruto * 0.08\n",
+    "sindicato = salario_bruto * 0.05\n",
+    "print (\"O seu salario bruto é de R$\", salario_bruto)\n",
+    "print (\"O valor descontado sobre o imposto de renda é de R$\", ir)\n",
+    "print (\"O valor descontado sobre o INSS é de R$\", inss)\n",
+    "print (\"O valor descontado sobre o desconto do sindicato é de R$\", sindicato)\n",
+    "print (\"Salário Liquido é R$ %.2f\" %(salario_bruto - ir - inss - sindicato))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "9 Faça um programa que leia 2 strings e informe o conteúdo delas seguido do seu\n",
+    "comprimento. Informe também se as duas strings possuem o mesmo comprimento e\n",
+    "são iguais ou diferentes no conteúdo.\n",
+    "Exemplo:\n",
+    "String 1: Brasil Hexa 2018\n",
+    "String 2: Brasil! Hexa 2018!\n",
+    "Tamanho de &quot;Brasil Hexa 2018&quot;: 16 caracteres\n",
+    "Tamanho de &quot;Brasil! Hexa 2018!&quot;: 18 caracteres\n",
+    "As duas strings são de tamanhos diferentes.\n",
+    "As duas strings possuem conteúdo diferente."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Digite um frase:todo mundo odeia o cris\n",
+      "Digite outra frase:não creio\n",
+      "são diferentes\n",
+      "Naõ possuem o mesmo tamanho\n"
+     ]
+    }
+   ],
+   "source": [
+    "s1 = str(input(\"Digite um frase:\"))\n",
+    "s2 = str(input(\"Digite outra frase:\"))\n",
+    "s11 = []\n",
+    "s22 = []\n",
+    "for letra in s1:\n",
+    "    s11.append(letra)\n",
+    "for letra in s2:\n",
+    "    s22.append(letra)\n",
+    "if (s1 == s2):\n",
+    "    print(\"são iguais\")\n",
+    "else :\n",
+    "    print (\"são diferentes\")\n",
+    "if (len (s1) == len (s2)):\n",
+    "    print (\"Possuem o mesmo tamanho\")\n",
+    "else:\n",
+    "    print (\"Naõ possuem o mesmo tamanho\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "10 Faça um programa que permita ao usuário digitar o seu nome e em seguida\n",
+    "mostre o nome do usuário de trás para frente utilizando somente letras maiúsculas.\n",
+    "Dica: lembre−se que ao informar o nome o usuário pode digitar letras maiúsculas ou\n",
+    "minúsculas. Observação: não use loops."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Digite seu nome: lucas\n",
+      "SACUL\n"
+     ]
+    }
+   ],
+   "source": [
+    "nome = \"\"\n",
+    "s = \"\"\n",
+    "nome = (input(\"Digite seu nome: \"))\n",
+    "for letra in reversed(nome):\n",
+    "      s+=letra\n",
+    "print (s.upper())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "11 Faça um programa que solicite a data de nascimento (dd/mm/aaaa) do usuário e\n",
+    "imprima a data com o nome do mês por extenso.\n",
+    "Data de Nascimento: 29/10/1973\n",
+    "\n",
+    "Você nasceu em 29 de Outubro de 1973.\n",
+    "Obs.: Não use desvio condicional nem loops."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mes = [\"Janeiro\", \"Fevereiro\", \"Março\", \"Abril\", \"Maio\", \"Junho\", \"Julho\", \"Agosto\", \"Setembro\", \"Outubro\", \"Novembro\", \"Dezembro\"]\n",
+    "data = input (\"Data de nascimento (dd/mm/aaaa: \")\n",
+    "mes = int (data.split(\"/\")[1]) - 1\n",
+    "print (\"Voce nasceu em \" + data[:2] + \" de \" + meses[mes] + \" de \")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
